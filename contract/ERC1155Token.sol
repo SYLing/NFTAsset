@@ -1,4 +1,3 @@
-
 pragma solidity ^0.5.17;
 
 
@@ -1365,10 +1364,10 @@ contract ERC1155Tradable is ERC1155, ERC1155MintBurn, ERC1155Metadata, Ownable, 
 
 contract ERC1155Token is ERC1155Tradable {
     
-    string private _contractURI = "https://github.com/nft-artist/nft";
+    string private _contractURI = "https://github.com/SYLing/NFTAsset";
     
-	constructor() public ERC1155Tradable("xxxx", "xxxx") {
-		_setBaseMetadataURI("https://raw.githubusercontent.com/nft-artist/nft/master/chr/");
+	constructor() public ERC1155Tradable("NFT", "avata") {
+		_setBaseMetadataURI("https://raw.githubusercontent.com/SYLing/NFTAsset/master/");
 	}
 
 	function contractURI() public view returns (string memory) {
